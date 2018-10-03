@@ -1,9 +1,93 @@
+body{
+  text-align: center;
+  font-size: 2em;
+  font-family: Dancing Script;
+}
+
+/*Encabezado*/
 header{
-  background-color: #5b7989
-  border-radius:
+  margin: 0px;
+  width: 70%;
+  display: flex;
+  flex-flow: row wrap;
+  background: #5b7989;
+  border-top-right-radius: 10px;
 }
 
 header img{
-  width: 10%;
-  margin: auto;  
+  height: 150px;
+  margin: 10px;
+  border-radius: 10px;
+  box-shadow: 2px 2px #02010a;
+}
+
+header h1{
+  text-align: center;
+color: white;
+text-shadow: 2px 2px #02010a;
+}
+
+/*navegacion*/
+a{
+  outline: 0;
+}
+
+a:link, a:visited{
+  color: white;
+  padding: 0 1px;
+  text-decoration: underline;
+}
+
+nav a{
+ color: #5b7989;
+ text-shadow: 2px 2px #02010a;
+}
+
+nav{
+  background: blue;
+  width: 70%;
+  margin-top: 3px;
+  display: flex;
+  flex-flow: row wrap;
+  text-shadow: 2px 2px #02010a;
+  border-top-right-radius: 10px;
+}
+
+nav ul{
+  list-style:none;
+  margin: 0 auto;
+  width: 800px;
+}
+nav ul li{
+  float: left;
+  display: inline;
+  margin: 0;
+}
+
+nav ul li a:link, nav ul li a:hover{
+  color:gray;
+  display: inline-block;
+  height: 30px;
+  padding: 5px 1.5em;
+  text-decoration: none;
+}
+
+/*Contenedor Imagenes*/
+.contenedor{
+  width: 80%;
+  margin: 3px auto;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.imagen1{
+  width: 100%
+}
+.imagen2{
+  width: 50%;
+  min-height: 400px;
+}
+.imagen3{
+  width: 50%;
+  min-height: 400px;
 }
