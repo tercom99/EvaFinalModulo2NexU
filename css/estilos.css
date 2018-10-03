@@ -1,17 +1,24 @@
 body{
+  margin: auto;
+  width: 80%;
   text-align: center;
   font-size: 2em;
   font-family: Dancing Script;
+  background: #ebebe0;
 }
 
 /*Encabezado*/
 header{
-  margin: 0px;
-  width: 70%;
+  background: #5b7989;
+  margin: auto;
+  width: 80%;
   display: flex;
   flex-flow: row wrap;
-  background: #5b7989;
   border-top-right-radius: 10px;
+  text-align: 20px;
+  color: white;
+  text-shadow: 2px 2px #02010a;
+  text-indent: 0.5cm;
 }
 
 header img{
@@ -23,8 +30,8 @@ header img{
 
 header h1{
   text-align: center;
-color: white;
-text-shadow: 2px 2px #02010a;
+  color: white;
+  text-shadow: 2px 2px #02010a;
 }
 
 /*navegacion*/
@@ -39,21 +46,22 @@ a:link, a:visited{
 }
 
 nav a{
- color: #5b7989;
+ color: white;
  text-shadow: 2px 2px #02010a;
 }
 
 nav{
-  background: blue;
-  width: 70%;
-  margin-top: 3px;
+  margin: 3px auto;
+  background:  #5b7989;
+  width: 80%;
   display: flex;
   flex-flow: row wrap;
   text-shadow: 2px 2px #02010a;
-  border-top-right-radius: 10px;
+  border-radius: 10px;
 }
 
 nav ul{
+  margin-left: inherit;
   list-style:none;
   margin: 0 auto;
   width: 800px;
@@ -61,7 +69,6 @@ nav ul{
 nav ul li{
   float: left;
   display: inline;
-  margin: 0;
 }
 
 nav ul li a:link, nav ul li a:hover{
@@ -72,22 +79,102 @@ nav ul li a:link, nav ul li a:hover{
   text-decoration: none;
 }
 
+nav ul li a:hover, nav ul li a:active{
+  background: #ebebe0;
+  /*text-shadow: none !important;*/
+  border-radius: 10px;
+}
+
 /*Contenedor Imagenes*/
+div figure figcaption{
+  color: black;
+  text-align: right;
+  text-shadow: 2px 2px white;
+}
+
+.contenedor img{
+  width: 100%;
+}
+
 .contenedor{
+  background: #ebebe0;
   width: 80%;
   margin: 3px auto;
   display: flex;
   flex-flow: row wrap;
 }
 
-.imagen1{
+.ImgCentral{
+  margin: 3px auto;
+  background: #ebebe0;
   width: 100%
 }
-.imagen2{
+
+.ImgSecIzq{
+  background: #ebebe0;
   width: 50%;
   min-height: 400px;
 }
-.imagen3{
+
+.ImgSecDer{
+  background: #ebebe0;
   width: 50%;
   min-height: 400px;
+}
+
+@@media all and (max-width: 900px) and (min-width: 700px) {
+  .contenedor{
+    width: 80%;
+  }
+  .ImgCentral{
+    width: 100%;
+  }
+  .ImgSecIzq{
+    width: 50%;
+    min-height: 400px;
+  }
+  .ImgSecDer{
+    width: 50%;
+    min-height: 400px;
+  }
+}
+
+@@media all and (max-width: 700px) and (min-width: 480px) {
+  .contenedor{
+    width: 80%;
+  }
+  .ImgCentral{
+    width: 90%;
+    order: 1;
+  }
+  .ImgSecIzq{
+    width: 30%;
+    min-height: 150px;
+    order: 2;
+  }
+  .ImgSecDer{
+    width: 30%;
+    min-height: 150px;
+    order: 3;
+  }
+}
+
+@@media all and (max-width: 480px) {
+  .contenedor{
+    width: 100%;
+  }
+  .ImgCentral{
+    width: 80%;
+    order: 1;
+  }
+  .ImgSecIzq{
+    width: 100%;
+    min-height: 150px;
+    order: 2;
+  }
+  .ImgSecDer{
+    width: 100%;
+    min-height: 150px;
+    order: 3;
+  }
 }
