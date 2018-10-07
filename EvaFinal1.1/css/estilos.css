@@ -1,0 +1,249 @@
+/*===================================
+Generales
+===================================*/
+body{
+  margin: auto;
+  width: 900px;
+  background: #02010a;
+  text-align: center;
+  font-family: Dancing Script;
+  font-size: 2em;
+  color: white;
+}
+img{
+  border-radius: 10px;
+  border: 1px solid black;
+  box-shadow: 2px 2px #02010a;
+}header, nav{
+  text-shadow: 2px 2px #02010a;
+}
+
+/*===================================
+header
+===================================*/
+header{
+  margin: auto;
+  widows: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  background: #5b7989;
+  border-radius: 10px 10px 0 0;
+}
+.logo{
+  width: 150px;
+  height: 120px;
+  margin: 10px 10px 0 10px;
+}
+.texto{
+  width: 500px;
+  height: 120px;
+}
+.logo img{
+  width: 150px;
+}
+header .texto{
+  padding: 0;
+}
+
+/*===================================
+Navegación
+===================================*/
+.navegacion{
+  width: 100%;
+  background: #5b7989;
+  display: flex;
+  flex-flow: row wrap;
+  text-indent: 0.5cm;
+  justify-content: flex-end;
+}
+.navegacion ul{
+  margin: 15px;
+  height: 25px;
+  list-style:none;
+}
+.navegacion ul li{
+  display: inline;
+  float: left;
+}
+.navegacion a{
+  text-decoration: none;
+  color: white;
+}
+.navegacion ul li a:hover{
+  color: gray;
+  margin: auto;
+  display: inline;
+  text-decoration: none;
+}
+.navegacion ul li a:hover, .navegacion ul li a:active{
+  background: #5b6990;
+  margin: auto;
+}
+/*===================================
+Principal
+===================================*/
+#principal{
+  margin: auto;
+  width: 900px;
+}
+#sup{
+  background: #82c3a6;
+}
+#sup img{
+  width: 70%;
+}
+#inf{
+  background: #d5c75f;
+  border: 1px;
+  width: 100%;
+  display: inline;
+  display: flex;
+  flex-flow: row-grap;
+}
+#inf>.izquierdo>img, #inf>.derecho>img{
+  width: 90%;
+  margin: auto;
+}
+
+/*===================================
+Footer
+===================================*/
+footer{
+  width: 100%;
+  margin: auto;
+  background: #C6d5c5;
+  border-radius: 0 0 10px 10px;
+  font-size: 0.5em;
+  color: black;
+  display: flex;
+  flex-flow: row-grap;
+  align-items: center;
+  justify-content: center;
+}
+.fsuperios, .fs2, .fs3, .fs4{
+  width: 25%;
+  margin: 10px;
+}
+.fsuperios{
+  float: right;
+}
+footer img{
+  width: 20px;
+  height: 20px;
+}
+
+
+/*===================================
+Animaciones
+===================================*/
+#inf>.izquierdo>img:hover{
+  transform: rotate(10deg);
+  box-shadow: 2px 2px #82c3a6;
+
+}
+#inf>.derecho>img:hover{
+  transform: translate3d(20px, -5px, 0px);
+  box-shadow: 2px 2px #82c3a6;
+}
+
+/*===================================
+@Media Query
+===================================*/
+@media all and (min-width: 900px) {
+    .header{
+      width: 100%;
+    }
+		.logo{
+  		width: 5%;
+  		min-height: 120px;
+		}
+		.texto{
+			width: 92%;
+			min-height: 120px;
+		}
+		.navegacion{
+			width: 100%;
+		}
+		.principal{
+			width: 100%;
+		}
+		.secSuperior{
+			width: 100%;
+		}
+		.secInferior{
+			width: 100%;
+		}
+		.izquierdo{
+			width100%;
+		}
+		.derecho{
+			width100%;
+		}
+		.fsuperiors{
+			width100%;
+		}
+		.fs1{
+			width:100%;
+		}
+		.fs2{
+			width:100%;
+		}
+		.fs3{
+			width:100%;
+		}
+		.fs4{
+			width:100%;
+		}
+	}
+
+  @media all and (max-width: 899px) {
+  		.header{
+  			width: 100%;
+  			min-height: 120px;
+  			order: 1;
+  		}
+  		.navegacion{
+  			width: 100%;
+  			order: 2;
+  		}
+  		.principal{
+  			width: 100%;
+  			order: 3;
+  		}
+  		.secSuperior{
+  			width: 100%;
+  			order: 4;
+  		}
+  		.secInferior{
+  			width: 100%;
+  			order: 5;
+  		}
+  		.izquierdo{
+  			width100%;
+  			order: 6;
+  		}
+  		.derecho{
+  			width100%;
+  			order: 7;
+  		}
+  		.fsuperiors{
+  			width100%;
+  			order: 8;
+  		}
+  		.fs1{
+  			width:100%;
+  			order: 9;
+  		}
+  		.fs2{
+  			width:100%;
+  			order: 10;
+  		}
+  		.fs3{
+  			width:100%;
+  			order: 11;
+  		}
+  		.fs4{
+  			width:100%;
+  			order: 12;
+  		}
+  	}
