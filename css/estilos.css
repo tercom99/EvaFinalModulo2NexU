@@ -122,6 +122,11 @@ div figure figcaption{
   min-height: 400px;
 }
 
+/* Animaciones*/
+
+
+
+/*media*/
 @@media all and (max-width: 900px) and (min-width: 700px) {
   .contenedor{
     width: 80%;
